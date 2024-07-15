@@ -32,7 +32,7 @@ def lambda_handler(event, context):
             output_buffer.seek(0)
 
             # Upload the converted image to the destination bucket
-            s3.put_object(Body=output_buffer, Bucket='convertedimagebucket1', Key=output_key)
+            s3.put_object(Body=output_buffer, Bucket='covertedimagebucket1', Key=output_key)
 
             return {
                 'statusCode': 200,
